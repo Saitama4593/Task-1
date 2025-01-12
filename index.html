@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">AnimeWorld</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#featured">Featured Anime</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Anime World</h1>
+            <p>Explore the universe of your favorite anime characters and stories.</p>
+            <a href="#featured" class="cta-button">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Anime World is your gateway to the most popular and trending anime. From thrilling adventures to heartfelt dramas, we bring the anime universe closer to you.</p>
+        <div class="stats-grid">
+            <div>
+                <h3>500+</h3>
+                <p>Anime Titles</p>
+            </div>
+            <div>
+                <h3>1M+</h3>
+                <p>Fans Worldwide</p>
+            </div>
+            <div>
+                <h3>10+</h3>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Anime Section -->
+    <section id="featured">
+        <h2>Featured Anime</h2>
+        <div class="featured-grid">
+            <div class="anime-card" onclick="openModal('Naruto')">
+                <img src="https://i.pinimg.com/736x/68/03/c8/6803c8454aac03f90abb627f7dc15598.jpg" alt="Naruto">
+                <h3>Naruto</h3>
+                <p>A thrilling journey of a ninja striving for greatness.</p>
+                <a class="details-btn">Details</a>
+            </div>
+            <div class="anime-card" onclick="openModal('Attack on Titan')">
+                <img src="https://i.pinimg.com/736x/70/bc/d8/70bcd8e816b8b18d3fbae9b8c140ff05.jpg" alt="Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <p>Humanity's last stand against monstrous Titans.</p>
+                <a class="details-btn">Details</a>
+            </div>
+            <div class="anime-card" onclick="openModal('Demon Slayer')">
+                <img src="https://i.pinimg.com/736x/06/4b/14/064b1460b9a20e5befae77d8056e4349.jpg" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>A young boy fights demons to save his sister.</p>
+                <a class="details-btn">Details</a>
+            </div>
+            <!-- One Piece Spotlight Section -->
+<section id="one-piece">
+    <h2>Spotlight: One Piece</h2>
+    <div class="one-piece-container">
+        <img src="https://i.pinimg.com/736x/04/e5/66/04e56656b2717f98e8d80c80246bdc1d.jpg" alt="One Piece">
+        <div class="one-piece-content">
+            <h3>The Grand Adventure</h3>
+            <p>
+                Set sail with Monkey D. Luffy and his Straw Hat Pirates as they embark on an epic journey across the Grand Line 
+                to find the legendary treasure, One Piece. Packed with action, humor, and unforgettable characters, it's one of 
+                the most beloved anime of all time.
+            </p>
+            <a href="#contact" class="cta-button">Join the Adventure</a>
+        </div>
+    </div>
+</section>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://i.pinimg.com/736x/68/03/c8/6803c8454aac03f90abb627f7dc15598.jpg" alt="Anime 1">
+            <img src="https://i.pinimg.com/736x/06/4b/14/064b1460b9a20e5befae77d8056e4349.jpg" alt="Anime 2">
+            <img src="https://i.pinimg.com/736x/04/e5/66/04e56656b2717f98e8d80c80246bdc1d.jpg" alt="Anime 3">
+            <img src="https://i.pinimg.com/736x/70/bc/d8/70bcd8e816b8b18d3fbae9b8c140ff05.jpg" alt="Anime 4">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Anime World. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- Anime Details Modal -->
+    <div id="anime-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="anime-title"></h2>
+            <p id="anime-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
