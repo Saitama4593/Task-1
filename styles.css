@@ -55,13 +55,13 @@ h1, h2, h3 {
 /* Hero Section */
 header {
     height: 100vh;
-    background: url('https://i.pinimg.com/originals/5a/2f/a5/5a2fa59a5b8be4a8df4a6408d1966b19.jpg') no-repeat center center/cover;
+    background: url('https://img.freepik.com/free-photo/anime-character-traveling_23-2151140056.jpg?t=st=1737192108~exp=1737195708~hmac=322ad4d758c0905a263998d5aa6f469663652a1ceac68368a76301dabcce454d&w=1380') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: white;
 }
 
 header .hero-content h1 {
